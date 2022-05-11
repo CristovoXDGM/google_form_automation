@@ -8,9 +8,9 @@ option.add_experimental_option("excludeSwitches", ['enable-automation']);
 #option.add_argument("disable-gpu")
 browser = webdriver.Chrome(executable_path='./chromedriver_linux64/chromedriver', options=option)
 
-browser.get("https://docs.google.com/forms/d/e/1FAIpQLSecfNE2jv37FQe-FiV0TR5i19KMn5gS4EqHEVRBARakcCLCrQ/viewform")
+browser.get("Your google form link")
  
-inputBoxes = browser.find_elements_by_class_name("whsOnd")
+inputBoxes = browser.find_elements_by_class_name("Main element class name (for more info, see selenium docs)")
 
 date = datetime.now()
 currentDate= date.strftime("%d")
